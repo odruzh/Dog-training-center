@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roh3oto:400,700&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" srs="js/jquery.js"></script>
+		<title>Dog Training Center</title>
+</head>
+
+
+<body>
+  
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+						
+						<div class="header__logo">
+						<a href="#up">
+							<img src="img/logo.png" alt="logo">
+						</a>
+						</div>
+						
+						<div class="header__burger">
+							<span></span>
+						</div>
+
+						
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li><a class="header__link" href="#serv">Services	</a></li>
+								<li><a class="header__link" href="#calc">Calculator</a></li>
+								<li><a class="header__link" href="#payment">Payment</a></li>
+								<li><a class="header__link" href="#portfolio">Portfolio</a></li>
+								<li><a class="header__link" href="#testimonials">Reviews</a></li>
+								<li><a class="header__link form__btn">Submit request</a></li>
+							</ul>
+						</nav>
+				</div>
+			</div>
+		</header>
+
+
+	<div class="banner" id="up">
+				<div class="banner__container">
+						<img src="img/trex.jpg" class="banner__picture">
+				</div>	
+	</div>
+
+
+		<div class="introduction">
+			<div class="introduction__container">
+				<h1 class="introduction__title">Why you need us and Why we need you</h1>
+				<p>Dog Training Center helps maximize the benefits and enjoyment of communicating with your pet. Specialists of the center have good experience in various canine structures.</p>
+			</div>
+		</div>
+
+
+		<div class="services" id="serv">
+			<div class="services__title title-h3">Our Services</div>
+			<div class="services__wrapper">
+					<figure class="services__figure">
+						<h3>Puppy Training Course</h3>
+						<img class="services__image" src="img/serv-1.jpg">
+						<figcaption>Learn the basic techniques of playing with a dog 
+                        to improve contact between the owner and the puppy <br>
+						</figcaption>
+					</figure>
+
+					<figure class="services__figure">
+						<h3>General Training Course</h3>
+						<img class="services__image" src="img/serv-2.jpg">
+						<figcaption>We'll learn “side by side” movement on a leash and without; indifferent attitude to the shot; abandonment of feed from other people's hands;<br>
+						dog work on obstacle course <br>
+                        </figcaption>
+					</figure>
+
+					<figure class="services__figure">
+						<h3>Dog in the City</h3>
+						<img class="services__image" src="img/serve-3.jpg">
+						<figcaption>Dog training quietly respond to the various situations that we come across daily when walking with our pets: other dogs, cats, transport and more <br>
+						</figcaption>
+					</figure>
+
+					<figure class="services__figure">
+						<h3>Agility</h3>
+						<img class="services__image" src="img/serv-4.jpg">
+						<figcaption>Agility - a sporty type of training, the essence of which is to pass the dog obstacles to speed and accuracy. When overcoming obstacles, a person controls them using only voice and gestures <br>
+						</figcaption>
+					</figure>
+
+					<figure class="services__figure">
+						<h3>Freestyle</h3>
+						<img class="services__image" src="img/serv-5.jpg">
+						<figcaption>Freestyle is a unique type of dog sport in which a person moves to music, directing the dog to perform various elements. In other words, dancing with dogs <br>
+						</figcaption>
+					</figure>
+
+					<figure class="services__figure">
+						<h3>Young Handler Program</h3>
+						<img class="services__image" src="img/serv-6.jpg">
+						<figcaption>In most cases, professional handlers (that is, the people who usually expose other dogs to the show for a fee) have started their journey from the Young Handler Program <br>
+						</figcaption>
+					</figure>
+			</div>
+		</div>
+
+
+	
+	<h2 class="calculator__title title-h3">Cost calculator</h2>
+	<div class="calculator">
+
+		
+			<div class="calculator__options" id="calc">
+					<div class="calculator__select">
+						<h3 class="str">Services</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="services">
+                                <option value="Agility">Agility</option>
+								<option value="Puppy Training Course">Puppy Training Course</option>
+								<option value="General Training Course">General Training Course</option>
+								<option value="Dog in the City">Dog in the City</option>
+                                <option value="Freestyle">Freestyle</option>
+                                <option value="Young Handler Program">Young Handler Program</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__select">
+						<h3 class="str">Size</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="breed">
+								<option value="1">Big</option>
+								<option value="2">Small</option>
+								<option value="3">Middle</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__select">
+						<h3 class="str">Age</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="age">
+								<option value="0.5">0.5 years</option>
+								<option value="2">2 years</option>
+								<option value="5">5 years</option>
+							</select>
+						</div>
+					</div>
+				</div>
+            <br>
+             <section align="center">
+					<button class="estim" id="btn">Count</button><br>
+					<p id="res"></p>
+			</section>
+	</div> 
+
+
+		<h2 class="payment__title title-h3">Payment Procedure</h2>
+
+		<div class="payment" id="payment">
+			<div class="payment__option"><img src="img/step-1.png"></div>
+			<div class="payment__arrow"><img src="img/next.png"></div>
+			<div class="payment__option"><img src="img/step-3.png"></div>
+			<div class="payment__arrow"><img src="img/next.png"></div>
+			<div class="payment__option"><img src="img/step-2.png"></div>
+			<div class="payment__arrow"><img src="img/next.png"></div>
+			<div class="payment__option"><img src="img/step-4.png"></div>
+		</div>
+
+<h2 class="slider__title" >Our Graduators</h2>
+<div class="slider" id="portfolio">
+	<div class="fotorama" data-loop="true">
+		  <img src="img/dog-1.jpg">
+		  <img src="img/dog-2.jpg">
+		  <img src="img/dog-3.jpg">
+		  <img src="img/dog-4.jpg">
+	</div>
+</div> 
+
+
+<div class="testimonials" id="testimonials">	 
+<div class="container">
+	<h2 class="testimonials__header">What our Clients say</h2>
+	<div class="testimonials__slider">
+		<div class="testimonials__block">
+			<img src="img/testimonial-1.jpg" alt="Woman with dog">
+			<h3>School Teacher</h3>
+			<p>This is the best Training Center with the best trainers. 
+			Thank you so much!</p>
+		</div>
+		<div class="testimonials__block">
+			<img src="img/testimonial-2.jpg" alt="Girl with a dog">
+			<h3>Thanksfull Parents</h3>
+			<p>They are the best friends!</p>
+		</div>
+		<div class="testimonials__block">
+			<img src="img/testimonial-3.jpg" alt="Walking dogs">
+			<h3>Mark</h3>
+			<p>Now we can walk everywhere with everybody!</p>
+		</div>
+	</div>
+</div>
+</div>
+
+
+	<div class="form__background">
+		<div class="form">
+			<button class="form__close"><b>&times;</b></button>
+			<h2 class="form__title">Enter your data</h2>
+				<div class="form__group">
+						<input class="form__input" type="text" required id="form-input-1">
+						<label class="rorm__label">Name</label>
+			 	</div>
+			 	<div class="form__group">
+						<input class="form__input" type="email" required id="form-input-2">
+						<label class="rorm__label">Email</label>
+			 	</div>
+			 	<div class="form__group">
+						<input class="form__input" type="text" required id="form-input-3">
+						<label class="rorm__label">Message</label>
+			 	</div>
+			 	<div class="form__button_container">
+			 		<button type="button" class="btn btn-primary form__button" data-toggle="modal" data-target="#exampleModal" id="form-button">Send</button>
+			 	</div>
+	 	</div>
+	</div>
+<div class="footer">
+		 <footer>
+		 	<div class="footer__contacts" id="contact">
+		 		<h3>Contact information</h3>
+		 		<p><img src="img/icon-1.png"> Lviv, Dovzhenka Str, 4</p>
+		 		<p><img src="img/icon-2.png"> tel. 01234567890</p>
+		 		<p><img src="img/icon-3.png"> trainingcenter@gmail.com</p>
+			</div>
+
+			<div class="footer__banner">
+						<div class="footer__banner_container">
+								<img src="img/footer.jpg" class="footer__banner_picture">
+						</div>	
+			</div>
+
+		 </footer>
+	 </div>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		
+
+		
+		<link rel="stylesheet" type="text/css" href="slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="JS/javascript.js"></script>
+    
+</body>
+</html>
