@@ -6,18 +6,8 @@ $('document').ready(function () {
 })
 
 
- btn.addEventListener('click', function(e) {
-
-	var result 			= 0;
-	var plague 			= document.querySelector('#plague[type=checkbox]')
-	var rabies 			= document.querySelector('#rabies[type=checkbox]')
-	var enteritis 		= document.querySelector('#enteritis[type=checkbox]')
-	var parainfluenza 	= document.querySelector('#parainfluenza[type=checkbox]')
-	var hepatitis		= document.querySelector('#hepatitis[type=checkbox]')
-	var leptospirosis 	= document.querySelector('#leptospirosis[type=checkbox]')
-
-
-			if (age.value === "5") {
+ btn.addEventListener('click', function(event) {
+	if (age.value === "5") {
 				result += 100;
 			} else if (age.value === "10") {
 				result += 200;
@@ -46,7 +36,7 @@ $('document').ready(function () {
 
 
 
-document.getElementById("form-button").onclick = function(e) {
+document.getElementById("form-button").onclick = function(event) {
 	 document.getElementById("form-input-1").value = "";
 	 document.getElementById("form-input-2").value = "";
 	 document.getElementById("form-input-3").value = "";
