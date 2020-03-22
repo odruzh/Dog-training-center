@@ -179,13 +179,13 @@ body {
 
 
 .calculator {
-	border: 1px solid #036976;
-	border-radius: 30px;
-	max-width: 500px;
+	border: 1px solid #035576;
+	border-radius: 15px;
+	max-width: 800px;
 	margin: 0px auto;
-	padding: 30px 0 30px 0;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	padding: 10px 0 10px 0;
+	margin-top: 30px;
+	margin-bottom: 20px;
 	box-shadow: 0 4px 16px #ccc;
 }
 
@@ -205,7 +205,7 @@ body {
 }
 
 .calculator__select h3 {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .calculator__select_unit {
@@ -219,7 +219,7 @@ body {
 	display: block;
 	border-style: solid;
 	border-width: 6px 5px 0px 5px;
-	border-color: #036e76 transparent transparent transparent;
+	border-color: #035576 transparent transparent transparent;
 	position: absolute;
 	top: 45%;
 	right: 1rem;
@@ -241,17 +241,86 @@ body {
 }
 
 
+.calculator__checkbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.calculator__checkbox_title {
+	text-align: center;
+}
+
+.calculator__checkbox_label {
+	width: 120px;
+	margin: 0 5px 20px 5px;
+	text-align: center;	
+}
+
+.calculator__checkbox_check input {
+	margin-right: 5px;
+}
+
+.dog__picture {
+	display: flex;
+	justify-content: center;
+}
+
+.calculator__checkbox_unit {
+	display: none;
+}
+
+.calculator__checkbox_fake {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+	background-color: #035576;
+	position: relative;
+}
+
+.calculator__checkbox_fake:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 12px;
+	height: 12px;
+    background-image: url(../img/check.png);
+	opacity: 0;
+	transition: 0.2s;
+}
+
+
+.calculator__checkbox_unit:checked + .calculator__checkbox_fake:before {
+	opacity: 1;
+}
+
+.estimate {
+	transition: all 0.5s ease 0s;
+	border: 1px solid #035f76;
+	width: 40%;
+	padding: 5px;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
 
 
 .estim {
-	background-color: #036576;
+	background-color: #035b76;
 	color: white;
 	border-style: none;
-	border-radius: 8px;
+	border-radius: 5px;
 	height: 30px;
 	width: 120px;
-	box-shadow: 3px 3px 4px #787878;
+	box-shadow: 3px 3px 4px #54b306;
 }
+
 
 
 .payment {
@@ -423,7 +492,7 @@ body {
 	width: 2rem;
 	height: 2rem;
 	border: none;
-	background: url(../images/prev.png);
+	background: url(../img/prev.png);
 }
 
 .next {
@@ -435,10 +504,10 @@ body {
 	width: 2rem;
 	height: 2rem;
 	border: none;
-	background: url(../images/nex.png);
+	background: url(../img/nex.png);
 }
 
-/* Кнопка связи */
+
 .contact__block {
 	margin: 0 auto;
 	display: block;
@@ -493,7 +562,7 @@ button, select, .form__btn, .calculator__checkbox_fake:hover {
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
-	background-color: #033076;
+	background-color: #035b76;
 	padding: 3px 5px 0 5px;
 	border-radius: 5px;
 	z-index: 2;

@@ -6,10 +6,10 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roh3oto:400,700&display=swap" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" srs="js/jquery.js"></script>
+		<script type="text/javascript" srs="JS/jquery.js"></script>
 		<title>Dog Training Center</title>
 </head>
 
@@ -112,34 +112,12 @@
 
 
 	
-	<h2 class="calculator__title title-h3">Cost calculator</h2>
+	<h2 class="calculator__title title-h3">Training Price</h2>
 	<div class="calculator">
 
 		
+			<!-- Выпадающие списки -->			
 			<div class="calculator__options" id="calc">
-					<div class="calculator__select">
-						<h3 class="str">Services</h3>
-						<div class="calculator__select_unit">
-							<select class="sel" id="services">
-                                <option value="Agility">Agility</option>
-								<option value="Puppy Training Course">Puppy Training Course</option>
-								<option value="General Training Course">General Training Course</option>
-								<option value="Dog in the City">Dog in the City</option>
-                                <option value="Freestyle">Freestyle</option>
-                                <option value="Young Handler Program">Young Handler Program</option>
-							</select>
-						</div>
-					</div>
-					<div class="calculator__select">
-						<h3 class="str">Size</h3>
-						<div class="calculator__select_unit">
-							<select class="sel" id="breed">
-								<option value="1">Big</option>
-								<option value="2">Small</option>
-								<option value="3">Middle</option>
-							</select>
-						</div>
-					</div>
 					<div class="calculator__select">
 						<h3 class="str">Age</h3>
 						<div class="calculator__select_unit">
@@ -150,13 +128,88 @@
 							</select>
 						</div>
 					</div>
+					<div class="calculator__select">
+						<h3 class="str">Breed</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="breed">
+								<option value="1">Non</option>
+								<option value="2">Service</option>
+								<option value="3">Decorative</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__select">
+						<h3 class="str">Weight</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="weight">
+								<option value="5">5 kg</option>
+								<option value="15">15 kg</option>
+								<option value="30">30 kg</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__select">
+						<h3 class="str">Pedigree</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="pedigree">
+								<option value="1">Yes</option>
+								<option value="2">No</option>
+							</select>
+						</div>
+					</div>
+					<div class="calculator__select">
+						<h3 class="str">Sex</h3>
+						<div class="calculator__select_unit">
+							<select class="sel" id="sex">
+								<option value="1">Boy</option>
+								<option value="2">Girl</option>
+							</select>
+						</div>
+					</div>
+			</div>
+
+<!-- Чекбокс -->
+			<h3 class="calculator__checkbox_title">Training Course</h3>
+				<div class="calculator__checkbox">
+					<label class="calculator__checkbox_label" >
+						<input type="checkbox" class="calculator__checkbox_unit" id="puppy">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">Puppy Training Course</span>
+					</label>
+					<label class="calculator__checkbox_label">
+						<input type="checkbox" class="calculator__checkbox_unit" id="general">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">General Training Course</span>
+					</label>
+					<label class="calculator__checkbox_label">
+						<input type="checkbox" class="calculator__checkbox_unit" id="dog">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">Dog in the City</span>
+					</label>
+					<label class="calculator__checkbox_label">
+						<input type="checkbox" class="calculator__checkbox_unit" id="agility">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">Agility</span>
+					</label>
+					<label class="calculator__checkbox_label">
+						<input type="checkbox" class="calculator__checkbox_unit" id="freestyle">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">Freestyle</span>
+					</label>
+					<label class="calculator__checkbox_label">
+						<input type="checkbox" class="calculator__checkbox_unit" id="young">
+						<span class="calculator__checkbox_fake"></span>
+						<span class="calculator__checkbox_text">Young Handler Program</span>
+					</label>
 				</div>
-            <br>
-             <section align="center">
-					<button class="estim" id="btn">Count</button><br>
+
+<!-- Кнопка расчёта -->
+				<section align="center">
+					<button class="estim" id="btn">Price</button><br>
 					<p id="res"></p>
-			</section>
-	</div> 
+				</section>
+	</div>
+
 
 
 		<h2 class="payment__title title-h3">Payment Procedure</h2>
@@ -184,22 +237,22 @@
 
 <div class="testimonials" id="testimonials">	 
 <div class="container">
-	<h2 class="testimonials__header">What our Clients say</h2>
+	<h2 class="testimonials__header">Success Stories</h2>
 	<div class="testimonials__slider">
 		<div class="testimonials__block">
 			<img src="img/testimonial-1.jpg" alt="Woman with dog">
-			<h3>School Teacher</h3>
+			<h3>Stella A. (School teacher)</h3>
 			<p>This is the best Training Center with the best trainers. 
 			Thank you so much!</p>
 		</div>
 		<div class="testimonials__block">
 			<img src="img/testimonial-2.jpg" alt="Girl with a dog">
-			<h3>Thanksfull Parents</h3>
-			<p>They are the best friends!</p>
+			<h3>Monika's parents</h3>
+			<p>They are the best friends! We aren't afraid let them walk together.</p>
 		</div>
 		<div class="testimonials__block">
 			<img src="img/testimonial-3.jpg" alt="Walking dogs">
-			<h3>Mark</h3>
+			<h3>Mark N. (Retired engineer)</h3>
 			<p>Now we can walk everywhere with everybody!</p>
 		</div>
 	</div>
@@ -228,6 +281,19 @@
 			 	</div>
 	 	</div>
 	</div>
+
+<div class="contact__block">
+	<h2>Register now and get Discount</h2>
+	<a class="form__btn contact__btn">Discount 25%</a>
+</div>
+
+<div class="arrow">
+	<a href="#up">
+	<img src="img/up.png">
+	</a>
+</div>
+
+
 <div class="footer">
 		 <footer>
 		 	<div class="footer__contacts" id="contact">
@@ -248,7 +314,7 @@
 
 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 		
 
